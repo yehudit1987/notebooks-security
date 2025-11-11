@@ -12,7 +12,9 @@ on:
         type: string
 
 env:
-  REGISTRY: ghcr.io/kubeflow/kubeflow/notebook-servers
+  # TODO: Revert to upstream org when merging to kubeflow/notebooks
+  # REGISTRY: ghcr.io/kubeflow/kubeflow/notebook-servers
+  REGISTRY: ghcr.io/yehudit1987/notebooks/notebook-servers
   CACHE_IMAGE: ghcr.io/${{ github.repository }}/notebook-servers/build-cache
 
 jobs:
