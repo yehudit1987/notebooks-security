@@ -14,7 +14,9 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  IMG: ghcr.io/kubeflow/notebooks/pvcviewer-controller
+  # TODO: Revert to upstream org when merging to kubeflow/notebooks
+  # IMG: ghcr.io/kubeflow/notebooks/pvcviewer-controller
+  IMG: ghcr.io/yehudit1987/notebooks/pvcviewer-controller
   TAG: integration-test
 
 jobs:

@@ -14,7 +14,9 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  IMG: ghcr.io/kubeflow/notebooks/notebook-controller
+  # TODO: Revert to upstream org when merging to kubeflow/notebooks
+  # IMG: ghcr.io/kubeflow/notebooks/notebook-controller
+  IMG: ghcr.io/yehudit1987/notebooks/notebook-controller
 
 jobs:
   build:
