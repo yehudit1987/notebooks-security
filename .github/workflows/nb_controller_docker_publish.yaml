@@ -11,9 +11,7 @@ on:
       - releasing/version/VERSION
 
 env:
-  # TODO: Revert to upstream org when merging to kubeflow/notebooks
-  # IMG: ghcr.io/kubeflow/notebooks/notebook-controller
-  IMG: ghcr.io/yehudit1987/notebooks/notebook-controller
+  IMG: ghcr.io/kubeflow/notebooks/notebook-controller
   ARCH: linux/amd64,linux/ppc64le,linux/arm64/v8
 
 jobs:

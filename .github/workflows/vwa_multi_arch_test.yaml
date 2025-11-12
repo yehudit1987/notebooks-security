@@ -15,9 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # TODO: Revert to upstream org when merging to kubeflow/notebooks
-  # IMG: ghcr.io/kubeflow/notebooks/volumes-web-app
-  IMG: ghcr.io/yehudit1987/notebooks/volumes-web-app
+  IMG: ghcr.io/kubeflow/notebooks/volumes-web-app
   PLATFORMS: linux/amd64,linux/ppc64le,linux/arm64/v8
 
 jobs:
